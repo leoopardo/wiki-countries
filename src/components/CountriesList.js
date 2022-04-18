@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export function CountriesList(props){
     return(
         <ul>
-            {props.countries.map((currentCountry) =>{
+            {props.countries.sort().map((currentCountry) => {
                 return (
                     <div className="conteiner" class="list-group-item list-group-item-action">
                             <Link to={currentCountry.alpha3Code}>
